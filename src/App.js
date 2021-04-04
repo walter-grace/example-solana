@@ -94,10 +94,10 @@ export default function App() {
           <div className="container">
             <h2>Markets</h2>
             <AwesomeButton
-            size="small"
+            size="icon"
             type="secondary"
             href="https://www.oxygen.org/">
-              Oxygen
+              ❄️
             </AwesomeButton>
             
             <AwesomeButton
@@ -107,16 +107,22 @@ export default function App() {
               🥭
             </AwesomeButton>
             <AwesomeButton
-            size="small"
+            size="icon"
             type="secondary"
             href="https://raydium.io/swap/">
-              Raydium
+              🧊
             </AwesomeButton>
             <AwesomeButton
             size="icon"
             type="secondary"
             href="https://openserum.ch/#/add?pair=SOL-BTC">
               🌀
+            </AwesomeButton>
+            <AwesomeButton
+            size="icon"
+            type="secondary"
+            href="https://blockfolio.com/">
+                🅱️    
             </AwesomeButton>
             <hr/>
             <h1>Solana address</h1>
