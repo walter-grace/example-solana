@@ -92,6 +92,7 @@ export default function App() {
           </div>
           <div className="container">
             <h1>Solana address</h1>
+            <b3>Balance:</b3>
             <div className="info">{publicAddress}</div>
             <QRCode value={publicAddress} />
           </div>
@@ -130,8 +131,6 @@ export default function App() {
             <AwesomeButton type="secondary" id="btn-send-txn" onPress={handlerSendTransaction}>
             <span role="img" aria-label="rocket">Send 🚀 </span>
             </AwesomeButton>
-          </div>
-          <div className="container">
           <AwesomeButton type="secondary" id="btn-send-txn" onPress={window.open("https://openserum.ch/mango-ui/#/market/C1EuT9VokAKLiW7i2ASnZUvxDoKuKkCpDDeNxAptuNe4")}>
           <span role="img" aria-label="mango">Mango Market🥭</span>
             </AwesomeButton>
