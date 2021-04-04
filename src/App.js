@@ -92,10 +92,43 @@ export default function App() {
             onPress={logout}>Logout</AwesomeButton>
           </div>
           <div className="container">
-            <h3>Markets</h3>
+            <h2>Markets</h2>
+            <AwesomeButton
+            size="small"
+            type="secondary"
+            href="https://www.oxygen.org/">
+              Oxygen
+            </AwesomeButton>
+            
+            <AwesomeButton
+            size="icon"
+            type="secondary"
+            href="https://openserum.ch/mango-ui/#/market/">
+              🥭
+            </AwesomeButton>
+            <AwesomeButton
+            size="small"
+            type="secondary"
+            href="https://raydium.io/swap/">
+              Raydium
+            </AwesomeButton>
+            <AwesomeButton
+            size="icon"
+            type="secondary"
+            href="https://openserum.ch/#/add?pair=SOL-BTC">
+              🌀
+            </AwesomeButton>
+            <hr/>
             <h1>Solana address</h1>
             <div className="info">{publicAddress}</div>
             <QRCode value={publicAddress} />
+            <br/>
+            <AwesomeButton type="secondary"
+            onPress={() =>  navigator.clipboard.writeText(publicAddress)
+            } 
+            >
+              Copy
+            </AwesomeButton>
           </div>
           <div className="container">
          
@@ -103,6 +136,7 @@ export default function App() {
             {txHash ? (
               <div>
                 <div>Send transaction success</div>
+                <span></span>
                 <div className="info">{txHash}</div>
               </div>
             ) : sendingTransaction ? (
