@@ -5,6 +5,7 @@ import { SolanaExtension } from "@magic-ext/solana";
 import * as web3 from "@solana/web3.js";
 import { AwesomeButton} from "react-awesome-button";
 import 'react-awesome-button/dist/themes/theme-rickiest.css';
+import Mango from "./Mango";
 
 const magic = new Magic("pk_live_27D4CE5DA9E43129", {
   extensions: {
@@ -91,12 +92,13 @@ export default function App() {
             onPress={logout}>Logout</AwesomeButton>
           </div>
           <div className="container">
+            <h3>Markets</h3>
             <h1>Solana address</h1>
-            <b3>Balance:</b3>
             <div className="info">{publicAddress}</div>
             <QRCode value={publicAddress} />
           </div>
           <div className="container">
+         
             <h1>Send Transaction</h1>
             {txHash ? (
               <div>
@@ -130,9 +132,6 @@ export default function App() {
             />
             <AwesomeButton type="secondary" id="btn-send-txn" onPress={handlerSendTransaction}>
             <span role="img" aria-label="rocket">Send 🚀 </span>
-            </AwesomeButton>
-          <AwesomeButton type="secondary" id="btn-send-txn" onPress={window.open("https://openserum.ch/mango-ui/#/market/C1EuT9VokAKLiW7i2ASnZUvxDoKuKkCpDDeNxAptuNe4")}>
-          <span role="img" aria-label="mango">Mango Market🥭</span>
             </AwesomeButton>
           </div>
         </div>
