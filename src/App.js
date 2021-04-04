@@ -69,6 +69,7 @@ export default function App() {
       {!isLoggedIn ? (
         <div className="container">
           <h1>Please sign up or login</h1>
+          <h5>ONLY USE IN DESKTOP/BROWSER</h5>
           <input
             type="email"
             name="email"
@@ -127,12 +128,12 @@ export default function App() {
               }}
             />
             <AwesomeButton type="secondary" id="btn-send-txn" onPress={handlerSendTransaction}>
-              Send 🚀
+            <span role="img" aria-label="rocket">Send 🚀 </span>
             </AwesomeButton>
           </div>
           <div className="container">
           <AwesomeButton type="secondary" id="btn-send-txn" onPress={window.open("https://openserum.ch/mango-ui/#/market/C1EuT9VokAKLiW7i2ASnZUvxDoKuKkCpDDeNxAptuNe4")}>
-              Mango Markets 🥭
+          <span role="img" aria-label="mango">Mango Market🥭</span>
             </AwesomeButton>
           </div>
         </div>
