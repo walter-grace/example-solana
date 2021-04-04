@@ -3,7 +3,7 @@ import "./styles.css";
 import { Magic } from "magic-sdk";
 import { SolanaExtension } from "@magic-ext/solana";
 import * as web3 from "@solana/web3.js";
-import { AwesomeButton, AwesomeButtonSocial } from "react-awesome-button";
+import { AwesomeButton} from "react-awesome-button";
 import 'react-awesome-button/dist/themes/theme-rickiest.css';
 
 const magic = new Magic("pk_live_27D4CE5DA9E43129", {
@@ -67,7 +67,7 @@ export default function App() {
   return (
     <div className="App">
       {!isLoggedIn ? (
-        <div className="container">
+        <div className="container1">
           <h1>Please sign up or login</h1>
           <h5>ONLY USE IN DESKTOP/BROWSER</h5>
           <input

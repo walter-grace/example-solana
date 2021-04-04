@@ -8,18 +8,25 @@
 #root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  height: 100vh;
+  height: 115vh;
   display: grid;
   font-size: 18px;
-  background-color: #eee;
+  border-radius: 25px;
 }
-
+.container1 {
+  width: 300px;
+  text-align: center;
+  padding: 27px 18px;
+  margin-bottom: 27px;
+  border-radius: 35px;
+}
 .container {
   width: 300px;
   background-color: #eee;
   text-align: center;
   padding: 27px 18px;
   margin-bottom: 27px;
+  border-radius: 35px;
 }
 
 h1 {
