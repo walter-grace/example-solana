@@ -6,6 +6,7 @@ import * as web3 from "@solana/web3.js";
 import { AwesomeButton} from "react-awesome-button";
 import 'react-awesome-button/dist/themes/theme-rickiest.css';
 import Mango from "./Mango";
+import FadeIn from "react-fade-in";
 
 const magic = new Magic("pk_live_27D4CE5DA9E43129", {
   extensions: {
@@ -84,6 +85,7 @@ export default function App() {
         </div>
       ) : (
         <div>
+          <FadeIn>
           <div className="container">
             <h1>Current user: {userMetadata.email}</h1>
             <AwesomeButton
@@ -91,6 +93,7 @@ export default function App() {
             ripple
             onPress={logout}>Logout</AwesomeButton>
           </div>
+        </FadeIn>
           <div className="container">
             <h2>Markets</h2>
             <AwesomeButton
@@ -123,20 +126,25 @@ export default function App() {
             href="https://openserum.ch/mango-ui/#/market/">
               🥭
             </AwesomeButton>
+
             <hr/>
             <h1>Solana address</h1>
             <div className="info">{publicAddress}</div>
+            <FadeIn>
             <QRCode value={publicAddress} />
             <br/>
+            <hr />
             <AwesomeButton type="secondary"
             onPress={() =>  navigator.clipboard.writeText(publicAddress)
             } 
             >
               Copy
             </AwesomeButton>
+            </FadeIn>
           </div>
           <div className="container">
-         
+            <FadeIn
+            >
             <h1>Send Transaction</h1>
             {txHash ? (
               <div>
@@ -146,9 +154,9 @@ export default function App() {
               </div>
             ) : sendingTransaction ? (
               <div className="sending-status">Sending transaction</div>
-            ) : (
-              <div />
-            )}
+              ) : (
+                <div />
+                )}
             <input
               type="text"
               name="destination"
@@ -158,7 +166,7 @@ export default function App() {
               onChange={(event) => {
                 setDestinationAddress(event.target.value);
               }}
-            />
+              />
             <input
               type="text"
               name="amount"
@@ -168,17 +176,19 @@ export default function App() {
               onChange={(event) => {
                 setSendAmount(event.target.value);
               }}
-            />
+              />
             <AwesomeButton type="secondary" id="btn-send-txn" onPress={handlerSendTransaction}>
             <span role="img" aria-label="rocket">Send 🚀 </span>
             </AwesomeButton>
+            <br/>
             <AwesomeButton
             size="medium"
             type="secondary"
             onPress={() => window.open(" https://explorer.solana.com/address/"+publicAddress ) }
-          >
+            >
             Balance ☀️  
             </AwesomeButton>
+          </FadeIn>
           </div>
         </div>
       )}
