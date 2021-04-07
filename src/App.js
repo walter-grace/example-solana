@@ -96,15 +96,14 @@ export default function App() {
             <AwesomeButton
             size="icon"
             type="secondary"
-            href="https://www.oxygen.org/">
-              ❄️
+            href="https://blockfolio.com/">
+                🅱️    
             </AwesomeButton>
-            
             <AwesomeButton
             size="icon"
             type="secondary"
-            href="https://openserum.ch/mango-ui/#/market/">
-              🥭
+            href="https://www.oxygen.org/">
+              ❄️
             </AwesomeButton>
             <AwesomeButton
             size="icon"
@@ -121,8 +120,8 @@ export default function App() {
             <AwesomeButton
             size="icon"
             type="secondary"
-            href="https://blockfolio.com/">
-                🅱️    
+            href="https://openserum.ch/mango-ui/#/market/">
+              🥭
             </AwesomeButton>
             <hr/>
             <h1>Solana address</h1>
@@ -172,6 +171,13 @@ export default function App() {
             />
             <AwesomeButton type="secondary" id="btn-send-txn" onPress={handlerSendTransaction}>
             <span role="img" aria-label="rocket">Send 🚀 </span>
+            </AwesomeButton>
+            <AwesomeButton
+            size="medium"
+            type="secondary"
+            onPress={() => window.open(" https://explorer.solana.com/address/"+publicAddress ) }
+          >
+            Balance ☀️  
             </AwesomeButton>
           </div>
         </div>
