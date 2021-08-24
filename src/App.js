@@ -70,7 +70,7 @@ export default function App() {
     <div className="App">
       {!isLoggedIn ? (
         <div className="container1">
-          <h1> Lamport Wallet, allows you to move less then pennies on the blockchain </h1>
+          <h1> Lamport Wallet, allows you to move less than pennies on the blockchain </h1>
           <h3>Please sign up or login</h3>
           <h5>ONLY USE IN DESKTOP/BROWSER</h5>
           <input
@@ -96,7 +96,6 @@ export default function App() {
           </div>
         </FadeIn>
           <div className="container">
-            <h6> 1 billion lamports = 1 Solana </h6>
             <h2>Markets</h2>
             <AwesomeButton
             size="icon"
@@ -147,7 +146,7 @@ export default function App() {
           <div className="container">
             <FadeIn
             >
-            <h1>Send Transaction</h1>
+           <h3> 1,000,000,000 lamports = 1 SOL </h3>
             {txHash ? (
               <div>
                 <div>Send transaction success</div>
