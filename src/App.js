@@ -70,8 +70,8 @@ export default function App() {
     <div className="App">
       {!isLoggedIn ? (
         <div className="container1">
-          <h1> Lamport Wallet, allows you to move less than pennies on the blockchain </h1>
-          <h3>Please sign up or login</h3>
+          <h1> Lamport Wallet allows you to move less than a penny on the blockchain </h1>
+          <h3>Enter your email to get your wallet</h3>
           <h5>ONLY USE IN DESKTOP/BROWSER</h5>
           <input
             type="email"
