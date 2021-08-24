@@ -70,8 +70,8 @@ export default function App() {
     <div className="App">
       {!isLoggedIn ? (
         <div className="container1">
-          <h1>Please sign up or login</h1>
-          <h4> Lamport Wallet, move pennies on the blockchain </h4>
+          <h1> Lamport Wallet, allows you to move less then pennies on the blockchain </h1>
+          <h3>Please sign up or login</h3>
           <h5>ONLY USE IN DESKTOP/BROWSER</h5>
           <input
             type="email"
@@ -96,6 +96,7 @@ export default function App() {
           </div>
         </FadeIn>
           <div className="container">
+            <h6> 1 billion lamports = 1 Solana </h6>
             <h2>Markets</h2>
             <AwesomeButton
             size="icon"
