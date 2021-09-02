@@ -118,13 +118,13 @@ export default function App() {
             <AwesomeButton
             size="icon"
             type="secondary"
-            href="https://openserum.ch/#/add?pair=SOL-BTC">
+            href="https://dex.projectserum.com/">
               🌀
             </AwesomeButton>
             <AwesomeButton
             size="icon"
             type="secondary"
-            href="https://openserum.ch/mango-ui/#/market/">
+            href="https://trade.mango.markets/">
               🥭
             </AwesomeButton>
 
@@ -147,6 +147,7 @@ export default function App() {
             <FadeIn
             >
            <h3> 1,000,000,000 lamports = 1 SOL </h3>
+           <h6> make sure to deposit SOL before sending tx </h6>
             {txHash ? (
               <div>
                 <div>Send transaction success</div>
